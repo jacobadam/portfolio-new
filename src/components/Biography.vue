@@ -13,9 +13,6 @@
 <script>
 export default {
   name: "MyBiography",
-  props: {
-    msg: String,
-  },
 };
 </script>
 

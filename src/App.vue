@@ -6,6 +6,7 @@
     <div class="right-column">
       <Biography />
       <Experience />
+      <Projects />
     </div>
   </div>
 </template>
@@ -14,6 +15,7 @@
 import Profile from "./components/Profile.vue";
 import Biography from "./components/Biography.vue";
 import Experience from "./components/Experience.vue";
+import Projects from "./components/Projects.vue";
 
 export default {
   name: "App",
@@ -21,6 +23,7 @@ export default {
     Profile,
     Biography,
     Experience,
+    Projects,
   },
 };
 </script>
@@ -46,6 +49,10 @@ export default {
 @media (max-width: 768px) {
   .app {
     flex-direction: column;
+  }
+
+  .left-column {
+    flex: 1;
   }
 }
 </style>

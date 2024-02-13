@@ -9,6 +9,7 @@
       I'm currently a software developer on the front-end team at Article, one
       of Canada's fastest-growing eCommerce companies.
     </p>
+    <div>Résumé Placeholder</div>
   </div>
 </template>
 

@@ -6,6 +6,8 @@
       Bridging the gap between design and functionality, one line of code at a
       time.
     </h3>
+    <div>LinkedIn Placeholder</div>
+    <div>GitHub Placeholder</div>
   </div>
 </template>
 

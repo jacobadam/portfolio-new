@@ -32,7 +32,7 @@ export default {
 }
 
 .left-column {
-  flex: 0 0 300px;
+  flex: 0 0 35%;
   background-color: #f0f0f0;
   overflow: hidden;
 }
@@ -46,10 +46,6 @@ export default {
 @media (max-width: 768px) {
   .app {
     flex-direction: column;
-  }
-
-  .left-column {
-    flex: 1;
   }
 }
 </style>

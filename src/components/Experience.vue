@@ -5,11 +5,11 @@
       <h2>Article</h2>
       <h3>Front-end Software Engineer</h3>
       <p>
-        I served as a front-end developer, actively participating in the
+        I serve as a front-end developer, actively participating in the
         maintenance and enhancement of a Vue powered eCommerce website. I
-        specialized in integrating innovative technologies such as Apollo
-        GraphQL for optimized data fetching, Algolia for seamless search
-        functionality, and Contentful for effective content management.
+        specialize in integrating innovative technologies such as Apollo GraphQL
+        for optimized data fetching, Algolia for seamless search functionality,
+        and Contentful for effective content management.
       </p>
     </div>
     <div>

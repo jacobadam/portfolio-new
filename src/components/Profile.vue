@@ -48,6 +48,7 @@ export default {
 .icons {
   margin-top: 30px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 10px;
 }
 </style>

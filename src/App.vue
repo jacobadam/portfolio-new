@@ -2,16 +2,22 @@
   <div class="app">
     <div class="left-column">
       <Profile />
+      <div class="anchorTags">
+        <a @click="scrollToSection('about')">About</a>
+        <a @click="scrollToSection('experience')">Experience</a>
+        <a @click="scrollToSection('projects')">Projects</a>
+      </div>
     </div>
     <div class="right-column">
-      <Biography />
-      <Experience />
-      <Projects />
+      <Biography ref="about" id="about" />
+      <Experience ref="experience" id="experience" />
+      <Projects ref="projects" id="projects" />
     </div>
   </div>
 </template>
 
 <script>
+import { ref, onMounted, toRefs } from "vue";
 import Profile from "./components/Profile.vue";
 import Biography from "./components/Biography.vue";
 import Experience from "./components/Experience.vue";
@@ -24,6 +30,33 @@ export default {
     Biography,
     Experience,
     Projects,
+  },
+  setup() {
+    const scrollToSection = (section) => {
+      const clickedSection = sections.value[section];
+
+      if (clickedSection) {
+        clickedSection.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    const sections = ref({
+      about: null,
+      experience: null,
+      projects: null,
+    });
+
+    onMounted(() => {
+      Object.keys(sections.value).forEach((section) => {
+        sections.value[section] =
+          sections.value[section] || document.getElementById(section);
+      });
+    });
+
+    return {
+      scrollToSection,
+      sections: toRefs(sections),
+    };
   },
 };
 </script>

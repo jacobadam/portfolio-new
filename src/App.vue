@@ -61,22 +61,32 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .app {
   display: flex;
-  height: 100vh;
-}
+  .left-column {
+    flex: 0 0 35%;
+    background-color: #f0f0f0;
+    overflow: hidden;
 
-.left-column {
-  flex: 0 0 35%;
-  background-color: #f0f0f0;
-  overflow: hidden;
-}
+    .anchorTags {
+      padding-top: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
 
-.right-column {
-  flex: 1;
-  overflow-y: auto;
-  padding: 20px;
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .right-column {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
 }
 
 @media (max-width: 768px) {

@@ -2,10 +2,10 @@
   <div class="profile">
     <h1>Jacob Nevitt</h1>
     <h2>Front End Developer</h2>
-    <h3>
+    <h4>
       Bridging the gap between design and functionality, one line of code at a
       time.
-    </h3>
+    </h4>
     <div class="icons">
       <a
         href="https://www.linkedin.com/in/jacobnevitt/"
@@ -50,5 +50,10 @@ export default {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+.icon {
+  filter: invert(1);
+  width: 25px;
+  height: 25px;
 }
 </style>

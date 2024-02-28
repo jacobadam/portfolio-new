@@ -64,9 +64,11 @@ export default {
 <style lang="postcss" scoped>
 .app {
   display: flex;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
   .left-column {
     flex: 0 0 35%;
-    background-color: #f0f0f0;
     overflow: hidden;
 
     .anchorTags {

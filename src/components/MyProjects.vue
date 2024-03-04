@@ -1,17 +1,13 @@
 <template>
-  <div class="biography">
+  <div class="projects">
     <h1>Projects</h1>
   </div>
 </template>
 
-<script>
-export default {
-  name: "MyProjects",
-};
-</script>
+<script setup></script>
 
 <style scoped>
-.biography {
+.projects {
   text-align: center;
 }
 </style>

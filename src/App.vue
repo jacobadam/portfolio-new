@@ -1,35 +1,35 @@
 <template>
   <div class="app">
     <div class="left-column">
-      <Profile />
+      <MyProfile />
       <div class="anchorTags">
-        <a @click="scrollToSection('about')">About</a>
-        <a @click="scrollToSection('experience')">Experience</a>
-        <a @click="scrollToSection('projects')">Projects</a>
+        <a @click="scrollToSection('About')">About</a>
+        <a @click="scrollToSection('MyExperience')">Experience</a>
+        <a @click="scrollToSection('MyProjects')">Projects</a>
       </div>
     </div>
     <div class="right-column">
-      <Biography ref="about" id="about" />
-      <Experience ref="experience" id="experience" />
-      <Projects ref="projects" id="projects" />
+      <MyBiography ref="About" id="About" />
+      <MyExperience ref="MyExperience" id="MyExperience" />
+      <MyProjects ref="MyProjects" id="MyProjects" />
     </div>
   </div>
 </template>
 
 <script>
 import { ref, onMounted, toRefs } from "vue";
-import Profile from "./components/Profile.vue";
-import Biography from "./components/Biography.vue";
-import Experience from "./components/Experience.vue";
-import Projects from "./components/Projects.vue";
+import MyProfile from "./components/MyProfile.vue";
+import MyBiography from "./components/MyBiography.vue";
+import MyExperience from "./components/MyExperience.vue";
+import MyProjects from "./components/MyProjects.vue";
 
 export default {
   name: "App",
   components: {
-    Profile,
-    Biography,
-    Experience,
-    Projects,
+    MyProfile,
+    MyBiography,
+    MyExperience,
+    MyProjects,
   },
   setup() {
     const scrollToSection = (section) => {
@@ -41,9 +41,9 @@ export default {
     };
 
     const sections = ref({
-      about: null,
-      experience: null,
-      projects: null,
+      About: null,
+      MyExperience: null,
+      MyProjects: null,
     });
 
     onMounted(() => {

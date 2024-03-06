@@ -95,7 +95,7 @@ const props = defineProps([
     background-color: #4a5568;
     color: coral;
     border-radius: 20px;
-    padding: 8px 12px;
+    padding: 8px 10px;
     margin-right: 8px;
     margin-bottom: 8px;
   }

@@ -28,7 +28,7 @@ const jobs = ref([
       "JavaScript",
       "TypeScript",
       "VueJS",
-      "React",
+      "ReactJS",
       "HTML & CSS",
       "GraphQL",
     ],
@@ -47,7 +47,7 @@ const jobs = ref([
     description:
       "I completed a comprehensive full-stack coding course at an award-winning bootcamp in Manchester. Acquired practical skills through an industry-led curriculum covering TDD, paired programming, and object-oriented programming. Collaborated within a group of 5, successfully delivering an end-to-end application in an agile environment. Engaged in daily stand-ups, utilized a kanban board, and presented the final project, showcasing my proficiency and adaptability as a junior developer.",
     dates: "2019",
-    technologies: ["JavaScript", "Node.js", "React", "MySQL", "HTML & CSS"],
+    technologies: ["JavaScript", "Node.js", "ReactJS", "MySQL", "HTML & CSS"],
   },
 ]);
 </script>

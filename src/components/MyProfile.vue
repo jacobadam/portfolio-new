@@ -1,8 +1,8 @@
 <template>
   <div class="profile">
     <h1>{{ name }}</h1>
-    <h2>{{ role }}</h2>
     <p>{{ description }}</p>
+
     <div class="icons">
       <a :href="linkedinUrl" target="_blank" rel="noopener noreferrer">
         <img :src="linkedinIcon" alt="LinkedIn Icon" class="icon" />
@@ -18,9 +18,8 @@
 import { ref } from "vue";
 
 const name = ref("Jacob Nevitt");
-const role = ref("Front End Developer");
 const description = ref(
-  "Bridging the gap between design and functionality one line of code at a time."
+  "Bridging the gap between design and functionality one line of code at a time"
 );
 
 const linkedinIcon = ref(require("../assets/linkedin_icon.png"));
@@ -33,6 +32,16 @@ const githubUrl = ref("https://github.com/jacobadam");
 <style scoped>
 .profile {
   text-align: center;
+  max-width: 450px;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 30px 16px 16px 16px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+h1 {
+  color: coral;
 }
 
 h2 {

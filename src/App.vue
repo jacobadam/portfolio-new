@@ -88,14 +88,13 @@ export default {
   .right-column {
     flex: 1;
     overflow-y: auto;
-    padding: 20px;
   }
 }
 
 @media (max-width: 768px) {
   .app {
     flex-direction: column;
-    height: 140vh;
+    height: 180vh;
   }
 
   .left-column {

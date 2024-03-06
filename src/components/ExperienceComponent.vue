@@ -2,12 +2,12 @@
   <div class="experience-card">
     <div class="experience-details">
       <div class="info-header">
-        <h2>{{ props.company }}</h2>
+        <h3>{{ props.company }}</h3>
         <div class="experience-dates">
           <span>{{ props.dates }}</span>
         </div>
       </div>
-      <h3>{{ props.position }}</h3>
+      <h4>{{ props.position }}</h4>
       <p>{{ props.description }}</p>
 
       <div class="technology-list">
@@ -50,7 +50,7 @@ const props = defineProps([
     background-color: #233554;
   }
 
-  &:hover .experience-details h2 {
+  &:hover .experience-details h3 {
     color: coral;
   }
 
@@ -68,15 +68,17 @@ const props = defineProps([
 
   .experience-dates {
     color: #8892b0;
+    padding-top: 10px;
+    font-size: 13px;
   }
 
-  h2 {
+  h3 {
     color: white;
     transition: color 0.3s;
     margin: 0;
   }
 
-  h3 {
+  h4 {
     color: #8892b0;
   }
 

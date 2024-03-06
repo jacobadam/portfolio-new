@@ -2,7 +2,6 @@
   <div class="profile">
     <h1>{{ name }}</h1>
     <p>{{ description }}</p>
-
     <div class="icons">
       <a :href="linkedinUrl" target="_blank" rel="noopener noreferrer">
         <img :src="linkedinIcon" alt="LinkedIn Icon" class="icon" />

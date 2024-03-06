@@ -64,9 +64,10 @@ export default {
 <style lang="postcss" scoped>
 .app {
   display: flex;
-  color: white;
   font-family: "Montserrat", sans-serif;
+  color: white;
   height: 100vh;
+
   .left-column {
     flex: 0 0 35%;
     overflow: hidden;
@@ -94,6 +95,7 @@ export default {
 @media (max-width: 768px) {
   .app {
     flex-direction: column;
+    height: 140vh;
   }
 
   .left-column {

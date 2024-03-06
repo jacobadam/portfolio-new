@@ -2,7 +2,7 @@
   <div class="profile">
     <h1>{{ name }}</h1>
     <h2>{{ role }}</h2>
-    <h4>{{ description }}</h4>
+    <p>{{ description }}</p>
     <div class="icons">
       <a :href="linkedinUrl" target="_blank" rel="noopener noreferrer">
         <img :src="linkedinIcon" alt="LinkedIn Icon" class="icon" />
@@ -33,6 +33,14 @@ const githubUrl = ref("https://github.com/jacobadam");
 <style scoped>
 .profile {
   text-align: center;
+}
+
+h2 {
+  color: #8892b0;
+}
+
+p {
+  color: #a8b2d1;
 }
 
 .icons {

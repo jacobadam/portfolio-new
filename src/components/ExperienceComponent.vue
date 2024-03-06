@@ -1,20 +1,44 @@
 <template>
   <div class="experience-card">
-    <h2>{{ props.company }}</h2>
-    <h3>{{ props.position }}</h3>
-    <p>{{ props.description }}</p>
+    <div class="experience-details">
+      <div class="info-header">
+        <h2>{{ props.company }}</h2>
+        <div class="experience-dates">
+          <span>{{ props.dates }}</span>
+        </div>
+      </div>
+      <h3>{{ props.position }}</h3>
+      <p>{{ props.description }}</p>
+
+      <div class="technology-list">
+        <div
+          class="technology-bubble"
+          v-for="tech in props.technologies"
+          :key="tech"
+        >
+          {{ tech }}
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
 import { defineProps } from "vue";
 
-const props = defineProps(["company", "position", "description"]);
+const props = defineProps([
+  "company",
+  "position",
+  "description",
+  "dates",
+  "technologies",
+]);
 </script>
 
 <style lang="scss" scoped>
 .experience-card {
-  max-width: 400px;
+  display: flex;
+  max-width: 450px;
   margin: 0 auto;
   border-radius: 8px;
   padding: 16px;
@@ -26,13 +50,30 @@ const props = defineProps(["company", "position", "description"]);
     background-color: #233554;
   }
 
-  &:hover h2 {
+  &:hover .experience-details h2 {
     color: coral;
+  }
+
+  .experience-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-dates {
+    color: #8892b0;
   }
 
   h2 {
     color: white;
     transition: color 0.3s;
+    margin: 0;
   }
 
   h3 {
@@ -41,6 +82,22 @@ const props = defineProps(["company", "position", "description"]);
 
   p {
     color: #a8b2d1;
+  }
+
+  .technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    font-size: 10px;
+  }
+
+  .technology-bubble {
+    background-color: #4a5568;
+    color: coral;
+    border-radius: 20px;
+    padding: 8px 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
   }
 }
 </style>

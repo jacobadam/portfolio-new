@@ -94,10 +94,11 @@ const props = defineProps([
   .technology-bubble {
     background-color: #4a5568;
     color: coral;
-    border-radius: 20px;
+    border-radius: 18px;
     padding: 8px 10px;
-    margin-right: 8px;
+    margin-right: 6px;
     margin-bottom: 8px;
+    font-weight: bold;
   }
 }
 </style>

@@ -1,11 +1,11 @@
 <template>
   <div class="experience">
     <h1>Experience</h1>
-    <ExperienceBox
+    <ExperienceComponent
       v-for="(job, index) in jobs"
       :key="index"
-      :header="job.company"
-      :title="job.position"
+      :company="job.company"
+      :position="job.position"
       :description="job.description"
     />
   </div>
@@ -13,7 +13,7 @@
 
 <script setup>
 import { ref } from "vue";
-import ExperienceBox from "./ExperienceBox.vue";
+import ExperienceComponent from "./ExperienceComponent.vue";
 
 const jobs = ref([
   {
@@ -29,7 +29,7 @@ const jobs = ref([
       "I actively contributed to the development of RESTful APIs using Perl, engaging in both front-end and back-end work for an in-house admin tool. With SQLPro, I gathered data and created custom reports, showcasing my hands-on experience. I honed my skills with Git and Linux shell for version control, ensuring smooth collaboration. These experiences reflect my growth as a junior developer, demonstrating versatility and a practical understanding of key tools in software development.",
   },
   {
-    company: "NorthCoders",
+    company: "Northcoders",
     position: "Graduate Software Engineer",
     description:
       "I completed a comprehensive full-stack coding course at an award-winning bootcamp in Manchester. Acquired practical skills through an industry-led curriculum covering TDD, paired programming, and object-oriented programming. Collaborated within a group of 5, successfully delivering an end-to-end application in an agile environment. Engaged in daily stand-ups, utilized a kanban board, and presented the final project, showcasing my proficiency and adaptability as a junior developer.",

@@ -20,7 +20,7 @@ import { ref } from "vue";
 const name = ref("Jacob Nevitt");
 const role = ref("Front End Developer");
 const description = ref(
-  "Bridging the gap between design and functionality, one line of code at a time."
+  "Bridging the gap between design and functionality one line of code at a time."
 );
 
 const linkedinIcon = ref(require("../assets/linkedin_icon.png"));

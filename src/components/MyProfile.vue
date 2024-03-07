@@ -1,6 +1,6 @@
 <template>
   <div class="profile">
-    <h1>{{ name }}</h1>
+    <h1 @click="scrollToAbout">{{ name }}</h1>
     <p>{{ description }}</p>
     <div class="icons">
       <a :href="linkedinUrl" target="_blank" rel="noopener noreferrer">
@@ -14,7 +14,13 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, defineProps } from "vue";
+
+const props = defineProps(["scrollToSection"]);
+
+const scrollToAbout = () => {
+  props.scrollToSection("About");
+};
 
 const name = ref("Jacob Nevitt");
 const description = ref(

@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <div class="left-column">
-      <MyProfile />
+      <MyProfile :scrollToSection="scrollToSection" />
       <div class="anchorTags">
         <a @click="scrollToSection('About')">About</a>
         <a @click="scrollToSection('MyExperience')">Experience</a>

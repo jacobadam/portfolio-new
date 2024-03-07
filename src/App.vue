@@ -3,9 +3,21 @@
     <div class="left-column">
       <MyProfile :scrollToSection="scrollToSection" />
       <div class="anchorTags">
-        <a @click="scrollToSection('About')">About</a>
-        <a @click="scrollToSection('MyExperience')">Experience</a>
-        <a @click="scrollToSection('MyProjects')">Projects</a>
+        <a
+          @click="scrollToSection('About')"
+          :class="{ active: activeSection === 'About' }"
+          >About</a
+        >
+        <a
+          @click="scrollToSection('MyExperience')"
+          :class="{ active: activeSection === 'MyExperience' }"
+          >Experience</a
+        >
+        <a
+          @click="scrollToSection('MyProjects')"
+          :class="{ active: activeSection === 'MyProjects' }"
+          >Projects</a
+        >
       </div>
     </div>
     <div class="right-column">
@@ -17,7 +29,7 @@
 </template>
 
 <script>
-import { ref, onMounted, toRefs } from "vue";
+import { ref, onMounted, onBeforeUnmount } from "vue";
 import MyProfile from "./components/MyProfile.vue";
 import MyBiography from "./components/MyBiography.vue";
 import MyExperience from "./components/MyExperience.vue";
@@ -32,6 +44,15 @@ export default {
     MyProjects,
   },
   setup() {
+    const activeSection = ref(null);
+    const observer = ref(null);
+
+    const sections = ref({
+      About: null,
+      MyExperience: null,
+      MyProjects: null,
+    });
+
     const scrollToSection = (section) => {
       const clickedSection = sections.value[section];
 
@@ -40,22 +61,43 @@ export default {
       }
     };
 
-    const sections = ref({
-      About: null,
-      MyExperience: null,
-      MyProjects: null,
-    });
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          activeSection.value = entry.target.id;
+        }
+      });
+    };
 
     onMounted(() => {
       Object.keys(sections.value).forEach((section) => {
         sections.value[section] =
           sections.value[section] || document.getElementById(section);
       });
+
+      observer.value = new IntersectionObserver(handleIntersection, {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+      });
+
+      Object.values(sections.value).forEach((section) => {
+        if (section) {
+          observer.value.observe(section);
+        }
+      });
+    });
+
+    onBeforeUnmount(() => {
+      if (observer.value) {
+        observer.value.disconnect();
+      }
     });
 
     return {
       scrollToSection,
-      sections: toRefs(sections),
+      activeSection,
+      sections,
     };
   },
 };
@@ -81,6 +123,11 @@ export default {
 
       a {
         cursor: pointer;
+        transition: color 0.3s;
+      }
+
+      .active {
+        color: coral;
       }
     }
   }

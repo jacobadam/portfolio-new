@@ -47,6 +47,7 @@ const githubUrl = ref("https://github.com/jacobadam");
 
 h1 {
   color: coral;
+  cursor: pointer;
 }
 
 h2 {

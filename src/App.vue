@@ -141,7 +141,6 @@ export default {
 @media (max-width: 768px) {
   .app {
     flex-direction: column;
-    height: 180vh;
   }
 
   .left-column {

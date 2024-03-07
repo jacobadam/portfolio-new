@@ -55,6 +55,6 @@ const jobs = ref([
 <style scoped>
 .experience {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 </style>

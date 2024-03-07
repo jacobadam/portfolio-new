@@ -39,6 +39,7 @@ const projects = ref([
 <style lang="scss" scoped>
 h2 {
   text-align: center;
+  padding-top: 30px;
 }
 
 .projects {

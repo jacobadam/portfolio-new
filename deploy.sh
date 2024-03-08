@@ -14,6 +14,6 @@ git add -A
 git commit -m 'deploy'
 
 # push to the custom domain
-git push -f git@github.com:jacobadam/portfolio-new.git main:gh-pages
+git push -f git@github.com:jacobadam/portfolio-new.git $(git symbolic-ref --short HEAD):gh-pages
 
 cd -

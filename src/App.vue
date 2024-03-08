@@ -86,6 +86,7 @@ export default {
           observer.value.observe(section);
         }
       });
+      document.title = "Jacob Nevitt";
     });
 
     onBeforeUnmount(() => {

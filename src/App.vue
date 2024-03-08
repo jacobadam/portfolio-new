@@ -111,8 +111,14 @@ export default {
   height: 100vh;
 
   .left-column {
-    flex: 0 0 25%;
+    flex: 0 0 35%;
     overflow: hidden;
+
+    @media (max-width: 768px) {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
 
     .anchorTags {
       padding-top: 20px;

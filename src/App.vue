@@ -111,7 +111,7 @@ export default {
   height: 100vh;
 
   .left-column {
-    flex: 0 0 35%;
+    flex: 0 0 25%;
     overflow: hidden;
 
     .anchorTags {
@@ -128,6 +128,10 @@ export default {
 
       .active {
         color: coral;
+      }
+
+      @media (max-width: 768px) {
+        display: none;
       }
     }
   }

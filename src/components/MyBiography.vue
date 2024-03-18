@@ -21,7 +21,7 @@ import { ref } from "vue";
 
 const introduction = ref("I'm Jacob, a creative coder & front-end developer.");
 const workHistory = ref(
-  "After graduating from an award-winning coding bootcamp, I worked on the development team for SpareRoom, the UK's largest property rental website. I'm currently a software developer on the front-end team at Article, one of Canada's fastest-growing eCommerce companies."
+  "After graduating from an award-winning coding bootcamp, I worked on the development team for SpareRoom, the UK's largest property rental website. For the past 3 years, I've been a software developer on the front-end team at Article, one of Canada's fastest-growing eCommerce companies."
 );
 
 const showResume = ref(false);

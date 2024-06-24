@@ -28,6 +28,10 @@
         </div>
       </div>
     </div>
+    <p class="note">
+      * Awaiting Spotify quota extension. Currently able to manually provide
+      access for up to 25 users.
+    </p>
   </div>
 </template>
 
@@ -40,7 +44,7 @@ import { ref } from "vue";
 
 const projects = ref([
   {
-    name: "Health Care Website",
+    name: "Healthcare Website",
     description:
       "A React app that integrates the Google Maps API and utilizes EmailJS for the contact form, with styling implemented using Tailwind CSS.",
     image: podiatrist,
@@ -50,7 +54,7 @@ const projects = ref([
   {
     name: "Spotify Stats",
     description:
-      "A React application integrated with the Spotify API, utilizing an Express server hosted on Heroku to handle the Authorization Code Flow. The front end, hosted on Netlify, allows users to view their top artists, top tracks, and recently played tracks.",
+      "A React application integrated with the Spotify API, utilizing an Express server hosted on Heroku to handle the Authorization Code Flow. The front end, hosted on Netlify, allows users to view their top artists, top tracks, and recently played tracks. *",
     image: spotify,
     link: "https://listening-stats-jn.netlify.app/",
     technologies: ["React", "Express", "Spotify API", "Heroku", "Netlify"],
@@ -143,5 +147,12 @@ h2 {
   margin-right: 6px;
   margin-bottom: 8px;
   font-weight: bold;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #a8b2d1;
+  text-align: center;
 }
 </style>

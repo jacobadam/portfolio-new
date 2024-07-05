@@ -30,7 +30,14 @@
     </div>
     <p class="note">
       * Awaiting Spotify quota extension. Currently able to manually provide
-      access for up to 25 users.
+      access for up to 25 users. Link to a demo video
+      <a
+        class="demo-link"
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.youtube.com/watch?v=AHFiA-hMPwo&t=4s&ab_channel=JacobNevitt"
+        >here.</a
+      >
     </p>
   </div>
 </template>
@@ -154,5 +161,18 @@ h2 {
   font-size: 14px;
   color: #a8b2d1;
   text-align: center;
+}
+
+.demo-link {
+  color: white;
+  text-decoration: none;
+}
+
+.demo-link:visited {
+  color: white;
+}
+
+.demo-link:hover {
+  text-decoration: underline;
 }
 </style>

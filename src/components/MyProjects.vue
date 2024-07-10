@@ -144,6 +144,7 @@ h2 {
   flex-wrap: wrap;
   margin-top: 12px;
   font-size: 10px;
+  justify-content: center;
 }
 
 .technology-bubble {

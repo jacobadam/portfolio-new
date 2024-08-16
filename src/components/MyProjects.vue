@@ -28,17 +28,6 @@
         </div>
       </div>
     </div>
-    <p class="note">
-      * Awaiting Spotify quota extension. Currently able to manually provide
-      access for up to 25 users. Link to a demo video
-      <a
-        class="demo-link"
-        target="_blank"
-        rel="noreferrer"
-        href="https://www.youtube.com/watch?v=AHFiA-hMPwo&t=4s&ab_channel=JacobNevitt"
-        >here.</a
-      >
-    </p>
   </div>
 </template>
 
@@ -61,7 +50,7 @@ const projects = ref([
   {
     name: "Spotify Stats",
     description:
-      "A React application integrated with the Spotify API, utilizing an Express server hosted on Heroku to handle the Authorization Code Flow. The front end, hosted on Netlify, allows users to view their top artists, top tracks, and recently played tracks. *",
+      "A React application integrated with the Spotify API, utilizing an Express server hosted on Heroku to handle the Authorization Code Flow. The front end, hosted on Netlify, allows users to view their top artists, top tracks, and recently played tracks.",
     image: spotify,
     link: "https://listening-stats-jn.netlify.app/",
     technologies: ["React", "Express", "Spotify API", "Heroku", "Netlify"],

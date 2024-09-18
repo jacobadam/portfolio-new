@@ -30,10 +30,10 @@
 
 <script>
 import { ref, onMounted, onBeforeUnmount } from "vue";
-import MyProfile from "./components/MyProfile.vue";
-import MyBiography from "./components/MyBiography.vue";
-import MyExperience from "./components/MyExperience.vue";
-import MyProjects from "./components/MyProjects.vue";
+import MyProfile from "./MyProfile.vue";
+import MyBiography from "./MyBiography.vue";
+import MyExperience from "./MyExperience.vue";
+import MyProjects from "./MyProjects.vue";
 
 export default {
   name: "App",

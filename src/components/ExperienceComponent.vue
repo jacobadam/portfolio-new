@@ -95,7 +95,7 @@ const props = defineProps([
 
   .technology-bubble {
     background-color: #4a5568;
-    color: coral;
+    color: #e57350;
     border-radius: 18px;
     padding: 8px 10px;
     margin-right: 6px;

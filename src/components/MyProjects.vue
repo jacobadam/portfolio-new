@@ -10,7 +10,12 @@
           rel="noreferrer"
         >
           <div class="project-content">
-            <img :src="project.image" :alt="project.name" />
+            <img
+              :src="project.image"
+              :alt="project.name"
+              width="150"
+              height="75"
+            />
             <div class="project-details">
               <h3>{{ project.name }}</h3>
               <p class="project-description">{{ project.description }}</p>
@@ -116,7 +121,9 @@ h2 {
 
 .project img {
   width: 150px;
-  height: auto;
+  height: 75px;
+  object-fit: cover;
+  display: block;
   margin-right: 20px;
 }
 

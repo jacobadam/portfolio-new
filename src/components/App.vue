@@ -4,17 +4,20 @@
       <MyProfile :scrollToSection="scrollToSection" />
       <div class="anchorTags">
         <a
-          @click="scrollToSection('About')"
+          href="#About"
+          @click.prevent="scrollToSection('About')"
           :class="{ active: activeSection === 'About' }"
           >About</a
         >
         <a
-          @click="scrollToSection('MyExperience')"
+          href="#MyExperience"
+          @click.prevent="scrollToSection('MyExperience')"
           :class="{ active: activeSection === 'MyExperience' }"
           >Experience</a
         >
         <a
-          @click="scrollToSection('MyProjects')"
+          href="#MyProjects"
+          @click.prevent="scrollToSection('MyProjects')"
           :class="{ active: activeSection === 'MyProjects' }"
           >Projects</a
         >
@@ -129,8 +132,18 @@ export default {
       gap: 10px;
 
       a {
+        color: white;
+        text-decoration: none;
         cursor: pointer;
         transition: color 0.3s;
+
+        &:visited {
+          color: white;
+        }
+
+        &:hover {
+          color: #f2734a;
+        }
       }
 
       .active {

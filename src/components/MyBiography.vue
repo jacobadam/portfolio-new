@@ -7,12 +7,6 @@
     <h2>About Me</h2>
     <p class="intro">{{ introduction }}</p>
     <p class="work-history">{{ workHistory }}</p>
-    <!-- <a
-      :class="{ resume: true, visible: showResume }"
-      href="resume.pdf"
-      target="_blank"
-      >Résumé</a
-    > -->
   </div>
 </template>
 

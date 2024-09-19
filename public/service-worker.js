@@ -12,7 +12,9 @@ const urlsToCache = [
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      console.log("Opened cache");
+      if (process.env.NODE_ENV === "development") {
+        console.log("Opened cache");
+      }
       return cache.addAll(urlsToCache);
     })
   );
@@ -36,6 +38,9 @@ self.addEventListener("activate", (event) => {
       return Promise.all(
         cacheNames.map((cacheName) => {
           if (cacheWhitelist.indexOf(cacheName) === -1) {
+            if (process.env.NODE_ENV === "development") {
+              console.log(`Deleting cache: ${cacheName}`);
+            }
             return caches.delete(cacheName);
           }
         })

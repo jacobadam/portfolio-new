@@ -46,7 +46,7 @@ const githubUrl = ref("https://github.com/jacobadam");
 }
 
 h1 {
-  color: coral;
+  color: #f2734a;
   cursor: pointer;
 }
 

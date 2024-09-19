@@ -43,7 +43,7 @@ p {
 }
 
 .resume {
-  color: coral;
+  color: #f2734a;
   font-weight: bold;
   opacity: 0;
   visibility: hidden;

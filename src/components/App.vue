@@ -104,7 +104,7 @@ export default {
 };
 </script>
 
-<style lang="postcss" scoped>
+<style lang="scss" scoped>
 .app {
   display: flex;
   font-family: "Montserrat", sans-serif;
@@ -134,7 +134,7 @@ export default {
       }
 
       .active {
-        color: coral;
+        color: #f2734a;
       }
 
       @media (max-width: 768px) {

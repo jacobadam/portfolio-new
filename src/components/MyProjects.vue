@@ -144,8 +144,8 @@ h2 {
 }
 
 .technology-bubble {
-  background-color: #4a5568;
-  color: #e57350;
+  background-color: #050505;
+  color: #f2734a;
   border-radius: 18px;
   padding: 8px 10px;
   margin-right: 6px;

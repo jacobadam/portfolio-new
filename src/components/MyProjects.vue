@@ -37,26 +37,41 @@
 </template>
 
 <script setup>
-import podiatrist from "@/assets/nnwebsite.webp";
-import spotify from "@/assets/spotify-stats.webp";
+import nnWebsite from "@/assets/nn-website.webp";
+import spotifyStats from "@/assets/spotify-stats.webp";
 import tetris from "@/assets/tetris-site.webp";
+import ksPortfolio from "@/assets/ks-portfolio.webp";
 
 import { ref } from "vue";
 
 const projects = ref([
   {
+    name: "Content Services Portfolio",
+    description:
+      "A Next.js app built for a small content creation and marketing business, featuring responsive design and optimized performance for SEO and accessibility.",
+    image: ksPortfolio,
+    link: "https://www.katieshevlin.com/",
+    technologies: ["Next.js", "Tailwind CSS", "EmailJS", "GitHub Pages"],
+  },
+  {
     name: "Healthcare Website",
     description:
       "A React app that integrates the Google Maps API and utilizes EmailJS for the contact form, with styling implemented using Tailwind CSS.",
-    image: podiatrist,
-    link: "https://jacobadam.github.io/nn-podiatry/",
-    technologies: ["ReactJS", "Tailwind", " GoogleMaps API", "EmailJS"],
+    image: nnWebsite,
+    link: "https://www.neilnevitt.com/",
+    technologies: [
+      "ReactJS",
+      "Tailwind",
+      " GoogleMaps API",
+      "EmailJS",
+      "GitHub Pages",
+    ],
   },
   {
     name: "Spotify Stats",
     description:
-      "A React application integrated with the Spotify API, utilizing an Express server hosted on Heroku to handle the Authorization Code Flow. The front end, hosted on Netlify, allows users to view their top artists, top tracks, and recently played tracks.",
-    image: spotify,
+      "A React app integrated with the Spotify API, utilizing an Express server hosted on Heroku to handle the Authorization Code Flow. The front end, hosted on Netlify, allows users to view their top artists, top tracks, and recently played tracks.",
+    image: spotifyStats,
     link: "https://listening-stats-jn.netlify.app/",
     technologies: ["React", "Express", "Spotify API", "Heroku", "Netlify"],
   },
@@ -66,7 +81,7 @@ const projects = ref([
       "A tetris-style game built with a combination of JavaScript, HTML, and CSS.",
     image: tetris,
     link: "https://jacobadam.github.io/tetris/",
-    technologies: ["JavaScript", "HTML", "CSS"],
+    technologies: ["JavaScript", "HTML", "CSS", "GitHub Pages"],
   },
 ]);
 </script>

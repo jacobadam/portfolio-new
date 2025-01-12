@@ -64,7 +64,7 @@ const projects = ref([
       "Tailwind",
       " GoogleMaps API",
       "EmailJS",
-      "GitHub Pages",
+      "Netlify",
     ],
   },
   {

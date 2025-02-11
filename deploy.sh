@@ -12,7 +12,7 @@ cd dist
 # Initialize a new Git repository inside the "dist" directory
 git init
 
-echo "jacobnevitt.com" > CNAME
+echo "www.jacobnevitt.com" > CNAME
 
 # Add all files to the repository
 git add -A

@@ -27,9 +27,10 @@ const jobs = ref([
     technologies: [
       "JavaScript",
       "TypeScript",
-      "VueJS",
-      "ReactJS",
-      "HTML & CSS",
+      "Vue.js",
+      "React",
+      "HTML",
+      "CSS",
       "GraphQL",
     ],
   },
@@ -39,7 +40,7 @@ const jobs = ref([
     description:
       "I actively contributed to the development of RESTful APIs using Perl, engaging in both front-end and back-end work for an in-house admin tool. With MySQL, I gathered data and created custom reports, showcasing my hands-on experience. I honed my skills with Git and Linux shell for version control, ensuring smooth collaboration. These experiences reflect my growth as a junior developer, demonstrating versatility and a practical understanding of key tools in software development.",
     dates: "2019-2020",
-    technologies: ["Perl", "MySQL", "jQuery", "HTML & CSS"],
+    technologies: ["Perl", "MySQL", "jQuery", "HTML", "CSS"],
   },
   {
     company: "Northcoders",
@@ -47,7 +48,7 @@ const jobs = ref([
     description:
       "I completed a comprehensive full-stack coding course at an award-winning bootcamp in Manchester. Acquired practical skills through an industry-led curriculum covering TDD, paired programming, and object-oriented programming. Collaborated within a group of 5, successfully delivering an end-to-end application in an agile environment. Engaged in daily stand-ups, utilized a kanban board, and presented the final project, showcasing my proficiency and adaptability as a junior developer.",
     dates: "2019",
-    technologies: ["JavaScript", "Node.js", "ReactJS", "MySQL", "HTML & CSS"],
+    technologies: ["JavaScript", "Node.js", "React", "MySQL", "HTML", "CSS"],
   },
 ]);
 </script>

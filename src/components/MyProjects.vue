@@ -41,10 +41,30 @@ import nnWebsite from "@/assets/nn-website.webp";
 import spotifyStats from "@/assets/spotify-stats.webp";
 import tetris from "@/assets/tetris-site.webp";
 import ksPortfolio from "@/assets/ks-portfolio.webp";
+import moodTrackerApp from "@/assets/mood-tracker-app.webp";
 
 import { ref } from "vue";
 
 const projects = ref([
+  {
+    name: "Mood Tracker App",
+    description:
+      "An React app with smooth, responsive SVG animation sequences that visually represent different mood states while maintaining seamless backend integration and real-time data updates.",
+    image: moodTrackerApp,
+    link: "https://mood-tracker-app.netlify.app/",
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Motion",
+      "GSAP",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Socket.IO",
+      "Netlify",
+      "Heroku",
+    ],
+  },
   {
     name: "Content Services Portfolio",
     description:
@@ -60,9 +80,9 @@ const projects = ref([
     image: nnWebsite,
     link: "https://www.neilnevitt.com/",
     technologies: [
-      "ReactJS",
-      "Tailwind",
-      " GoogleMaps API",
+      "React",
+      "Tailwind CSS",
+      "GoogleMaps API",
       "EmailJS",
       "Netlify",
     ],
@@ -73,7 +93,7 @@ const projects = ref([
       "A React app integrated with the Spotify API, utilizing an Express server hosted on Heroku to handle the Authorization Code Flow. The front end, hosted on Netlify, allows users to view their top artists, top tracks, and recently played tracks.",
     image: spotifyStats,
     link: "https://listening-stats-jn.netlify.app/",
-    technologies: ["React", "Express", "Spotify API", "Heroku", "Netlify"],
+    technologies: ["React", "Express.js", "Spotify API", "Heroku", "Netlify"],
   },
   {
     name: "Tetris",

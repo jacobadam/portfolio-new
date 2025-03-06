@@ -1,25 +1,19 @@
 <template>
-  <div
-    class="biography"
-    @mouseover="showResume = true"
-    @mouseleave="showResume = false"
-  >
+  <div class="biography">
     <h2>About Me</h2>
-    <p class="intro">{{ introduction }}</p>
-    <p class="work-history">{{ workHistory }}</p>
+    <p class="intro">
+      I'm <b style="color: white">Jacob</b>, a creative coder & front-end
+      developer.
+    </p>
+    <p class="work-history">
+      After graduating from an award-winning coding bootcamp, I refined my
+      skills at the UK's largest property rental website, SpareRoom, and moved
+      on to develop revenue-driving features at Article, one of Canada's leading
+      eCommerce companies. I'm currently focused on crafting seamless, optimized
+      sites for freelance clients.
+    </p>
   </div>
 </template>
-
-<script setup>
-import { ref } from "vue";
-
-const introduction = ref("I'm Jacob, a creative coder & front-end developer.");
-const workHistory = ref(
-  "After graduating from an award-winning coding bootcamp, I refined my skills at the UK's largest property rental website, SpareRoom, and moved on to develop revenue-driving features at Article, one of Canada's leading eCommerce companies. I'm currently focused on crafting seamless, optimized sites for freelance clients."
-);
-
-const showResume = ref(false);
-</script>
 
 <style scoped>
 .biography {

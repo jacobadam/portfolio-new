@@ -118,7 +118,12 @@ export default {
     flex: 0 0 35%;
     overflow: hidden;
 
-    @media (max-width: 768px) {
+    @media (max-width: 375px) {
+      flex: 0 0 40%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      flex: 0 0 30%;
       position: sticky;
       top: 0;
       z-index: 2;

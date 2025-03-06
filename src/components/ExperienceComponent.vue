@@ -54,6 +54,10 @@ const props = defineProps([
     color: #f2734a;
   }
 
+  &:hover .experience-details h4 {
+    color: white;
+  }
+
   .experience-details {
     display: flex;
     flex-direction: column;

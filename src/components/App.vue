@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+    <vue-particles :options="particlesOptions" id="tsparticles" />
     <div class="left-column">
       <MyProfile :scrollToSection="scrollToSection" />
       <div class="anchorTags">
@@ -98,9 +99,71 @@ onBeforeUnmount(() => {
     observer.value.disconnect();
   }
 });
+
+const particlesOptions = {
+  fpsLimit: 60,
+  particles: {
+    number: { value: 100, density: { enable: true, value_area: 800 } },
+
+    shape: {
+      type: "circle",
+    },
+    opacity: {
+      value: 1,
+      random: true,
+      anim: { enable: true, speed: 1, opacity_min: 0, sync: false },
+    },
+    size: {
+      value: 2,
+      random: true,
+      anim: { enable: false, speed: 3, size_min: 0.3, sync: false },
+    },
+    move: {
+      enable: true,
+      speed: 1,
+      direction: "none",
+      random: true,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: { enable: false, rotateX: 600, rotateY: 600 },
+    },
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onClick: {
+        enable: true,
+        mode: "repulse",
+      },
+      onHover: {
+        enable: true,
+        mode: "grab",
+      },
+    },
+    modes: {
+      grab: {
+        distance: 400,
+        links: {
+          blink: false,
+          consent: false,
+          opacity: 1,
+        },
+      },
+    },
+  },
+  retina_detect: true,
+};
 </script>
 
 <style lang="scss" scoped>
+#tsparticles {
+  z-index: -1;
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
 .app {
   display: flex;
   font-family: "Montserrat", sans-serif;

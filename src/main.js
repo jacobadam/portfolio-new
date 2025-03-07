@@ -4,10 +4,12 @@ import "./global.css";
 import Particles from "@tsparticles/vue3";
 import { loadFull } from "tsparticles";
 
-createApp(App).use(Particles, {
+const app = createApp(App);
+
+app.use(Particles, {
   init: async (engine) => {
     await loadFull(engine);
   },
 });
 
-createApp(App).mount("#app");
+app.mount("#app");

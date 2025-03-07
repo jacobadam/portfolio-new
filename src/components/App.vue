@@ -24,87 +24,80 @@
       </div>
     </div>
     <div class="right-column">
-      <MyBiography ref="About" id="About" />
-      <MyExperience ref="MyExperience" id="MyExperience" />
-      <MyProjects ref="MyProjects" id="MyProjects" />
+      <MyBiography ref="myAboutRef" id="About" />
+      <MyExperience ref="myExperienceRef" id="MyExperience" />
+      <MyProjects ref="myProjectsRef" id="MyProjects" />
     </div>
   </div>
 </template>
 
-<script>
+<script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
 import MyProfile from "./MyProfile.vue";
 import MyBiography from "./MyBiography.vue";
 import MyExperience from "./MyExperience.vue";
 import MyProjects from "./MyProjects.vue";
 
-export default {
-  name: "App",
-  components: {
-    MyProfile,
-    MyBiography,
-    MyExperience,
-    MyProjects,
-  },
-  setup() {
-    const activeSection = ref(null);
-    const observer = ref(null);
+const activeSection = ref(null);
+const observer = ref(null);
 
-    const sections = ref({
-      About: null,
-      MyExperience: null,
-      MyProjects: null,
-    });
+const myAboutRef = ref(null);
+const myExperienceRef = ref(null);
+const myProjectsRef = ref(null);
 
-    const scrollToSection = (section) => {
-      const clickedSection = sections.value[section];
+const sections = ref({
+  About: null,
+  MyExperience: null,
+  MyProjects: null,
+});
 
-      if (clickedSection) {
-        clickedSection.scrollIntoView({ behavior: "smooth" });
-      }
-    };
-
-    const handleIntersection = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          activeSection.value = entry.target.id;
-        }
-      });
-    };
-
-    onMounted(() => {
-      Object.keys(sections.value).forEach((section) => {
-        sections.value[section] =
-          sections.value[section] || document.getElementById(section);
-      });
-
-      observer.value = new IntersectionObserver(handleIntersection, {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.45,
-      });
-
-      Object.values(sections.value).forEach((section) => {
-        if (section) {
-          observer.value.observe(section);
-        }
-      });
-      document.title = "Jacob Nevitt";
-    });
-
-    onBeforeUnmount(() => {
-      if (observer.value) {
-        observer.value.disconnect();
-      }
-    });
-
-    return {
-      scrollToSection,
-      activeSection,
-      sections,
-    };
-  },
+const scrollToSection = (section) => {
+  if (section === "About" && myAboutRef.value) {
+    myAboutRef.value.$el.scrollIntoView({ behavior: "smooth" });
+  } else if (section === "MyExperience" && myExperienceRef.value) {
+    myExperienceRef.value.$el.scrollIntoView({ behavior: "smooth" });
+  } else if (section === "MyProjects" && myProjectsRef.value) {
+    myProjectsRef.value.$el.scrollIntoView({ behavior: "smooth" });
+  }
 };
+
+const handleIntersection = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      activeSection.value = entry.target.id;
+    }
+  });
+};
+
+onMounted(() => {
+  sections.value.About = myAboutRef.value.$el;
+  sections.value.MyExperience = myExperienceRef.value.$el;
+  sections.value.MyProjects = myProjectsRef.value.$el;
+
+  Object.keys(sections.value).forEach((section) => {
+    sections.value[section] =
+      sections.value[section] || document.getElementById(section);
+  });
+
+  observer.value = new IntersectionObserver(handleIntersection, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.45,
+  });
+
+  Object.values(sections.value).forEach((section) => {
+    if (section) {
+      observer.value.observe(section);
+    }
+  });
+  document.title = "Jacob Nevitt";
+});
+
+onBeforeUnmount(() => {
+  if (observer.value) {
+    observer.value.disconnect();
+  }
+});
 </script>
 
 <style lang="scss" scoped>

@@ -103,7 +103,7 @@ onBeforeUnmount(() => {
 const particlesOptions = {
   fpsLimit: 60,
   particles: {
-    number: { value: 100, density: { enable: true, value_area: 800 } },
+    number: { value: 150, density: { enable: true, value_area: 800 } },
 
     shape: {
       type: "circle",
@@ -111,16 +111,16 @@ const particlesOptions = {
     opacity: {
       value: 1,
       random: true,
-      anim: { enable: true, speed: 1, opacity_min: 0, sync: false },
+      anim: { enable: true, speed: 5, opacity_min: 0, sync: false },
     },
     size: {
       value: 2,
       random: true,
-      anim: { enable: false, speed: 3, size_min: 0.3, sync: false },
+      anim: { enable: false, speed: 5, size_min: 0.3, sync: false },
     },
     move: {
       enable: true,
-      speed: 1,
+      speed: 2,
       direction: "none",
       random: true,
       straight: false,
@@ -149,6 +149,9 @@ const particlesOptions = {
           consent: false,
           opacity: 1,
         },
+      },
+      repulse: {
+        distance: 300,
       },
     },
   },

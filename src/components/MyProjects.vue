@@ -49,7 +49,7 @@ const projects = ref([
   {
     name: "Mood Tracker App",
     description:
-      "An React app with smooth, responsive SVG animation sequences that visually represent different mood states while maintaining seamless backend integration and real-time data updates.",
+      "A React app with smooth, responsive SVG animation sequences that visually represent different mood states while maintaining seamless backend integration and real-time data updates.",
     image: moodTrackerApp,
     link: "https://mood-tracker-app.netlify.app/",
     technologies: [

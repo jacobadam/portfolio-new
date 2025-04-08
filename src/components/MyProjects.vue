@@ -86,7 +86,7 @@ const projects = ref([
       "JavaScript",
       "Tailwind CSS",
       "EmailJS",
-      "GitHub Pages",
+      "Vercel",
     ],
   },
   {

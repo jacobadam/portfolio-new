@@ -42,10 +42,19 @@ import spotifyStats from "@/assets/spotify-stats.webp";
 import tetris from "@/assets/tetris-site.webp";
 import ksPortfolio from "@/assets/ks-portfolio.webp";
 import moodTrackerApp from "@/assets/mood-tracker-app.webp";
+import bechdelWallaceTest from "@/assets/bechdel-wallace-test.webp";
 
 import { ref } from "vue";
 
 const projects = ref([
+  {
+    name: "Bechdel-Wallace Test",
+    description:
+      "A Next.js app that evaluates movies against the Bechdel-Wallace Test, highlighting gender representation by checking if films meet key criteria for meaningful female presence and dialogue, all with a clean, user-friendly interface.",
+    image: bechdelWallaceTest,
+    link: "https://bechdeltest.vercel.app/",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+  },
   {
     name: "Mood Tracker App",
     description:
@@ -54,6 +63,7 @@ const projects = ref([
     link: "https://mood-tracker-app.netlify.app/",
     technologies: [
       "React",
+      "TypeScript",
       "Tailwind CSS",
       "Motion",
       "GSAP",
@@ -71,7 +81,13 @@ const projects = ref([
       "A Next.js app built for a small content creation and marketing business, featuring responsive design and optimized performance for SEO and accessibility.",
     image: ksPortfolio,
     link: "https://www.katieshevlin.com/",
-    technologies: ["Next.js", "Tailwind CSS", "EmailJS", "GitHub Pages"],
+    technologies: [
+      "Next.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "EmailJS",
+      "GitHub Pages",
+    ],
   },
   {
     name: "Healthcare Website",
@@ -81,6 +97,7 @@ const projects = ref([
     link: "https://www.neilnevitt.com/",
     technologies: [
       "React",
+      "JavaScript",
       "Tailwind CSS",
       "GoogleMaps API",
       "EmailJS",
@@ -93,7 +110,14 @@ const projects = ref([
       "A React app integrated with the Spotify API, utilizing an Express server hosted on Heroku to handle the Authorization Code Flow. The front end, hosted on Netlify, allows users to view their top artists, top tracks, and recently played tracks.",
     image: spotifyStats,
     link: "https://listening-stats-jn.netlify.app/",
-    technologies: ["React", "Express.js", "Spotify API", "Heroku", "Netlify"],
+    technologies: [
+      "React",
+      "JavaScript",
+      "Express.js",
+      "Spotify API",
+      "Heroku",
+      "Netlify",
+    ],
   },
   {
     name: "Tetris",

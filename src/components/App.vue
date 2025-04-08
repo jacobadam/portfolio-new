@@ -83,7 +83,7 @@ onMounted(() => {
   observer.value = new IntersectionObserver(handleIntersection, {
     root: null,
     rootMargin: "0px",
-    threshold: 0.45,
+    threshold: 0.4,
   });
 
   Object.values(sections.value).forEach((section) => {
@@ -103,30 +103,47 @@ onBeforeUnmount(() => {
 const particlesOptions = {
   fpsLimit: 60,
   particles: {
-    number: { value: 150, density: { enable: true, value_area: 800 } },
-
+    number: { value: 200, density: { enable: true, value_area: 800 } },
     shape: {
       type: "circle",
+      stroke: {
+        width: 0,
+        color: "#000000",
+      },
+      polygon: {
+        nb_sides: 5,
+      },
     },
     opacity: {
       value: 1,
       random: true,
-      anim: { enable: true, speed: 5, opacity_min: 0, sync: false },
+      anim: { enable: true, speed: 2, opacity_min: 0, sync: false },
     },
     size: {
-      value: 2,
+      value: 0.5,
       random: true,
-      anim: { enable: false, speed: 5, size_min: 0.3, sync: false },
+      anim: { enable: false, speed: 2, size_min: 0.3, sync: false },
+    },
+    line_linked: {
+      enable: true,
+      distance: 110,
+      color: "#33b1f8",
+      opacity: 0.25,
+      width: 1,
     },
     move: {
       enable: true,
-      speed: 2,
+      speed: 1.6,
       direction: "none",
-      random: true,
+      random: false,
       straight: false,
       out_mode: "out",
       bounce: false,
-      attract: { enable: false, rotateX: 600, rotateY: 600 },
+      attract: {
+        enable: false,
+        rotateX: 600,
+        rotateY: 1200,
+      },
     },
   },
   interactivity: {
@@ -143,15 +160,21 @@ const particlesOptions = {
     },
     modes: {
       grab: {
-        distance: 400,
-        links: {
-          blink: false,
-          consent: false,
+        distance: 140,
+        line_linked: {
           opacity: 1,
         },
       },
+      bubble: {
+        distance: 400,
+        size: 40,
+        duration: 2,
+        opacity: 8,
+        speed: 3,
+      },
       repulse: {
-        distance: 300,
+        distance: 200,
+        duration: 0.4,
       },
     },
   },

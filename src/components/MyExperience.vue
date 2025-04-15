@@ -20,7 +20,7 @@ import ExperienceComponent from "./ExperienceComponent.vue";
 const jobs = ref([
   {
     company: "Article",
-    position: "Front-end Software Developer",
+    position: "Software Developer",
     description:
       "Working as a developer on the Storefront team, I built and maintained features for the company’s e-commerce web application, which serves millions of monthly users, leveraging Vue.js, React, and Next.js. I drove a 12% increase in conversions via a product page redesign and implemented a cross-sell component that generated $30K in sales within its first month. I also spearheaded a performance optimization initiative that improved the Lighthouse score by 25% and reduced load times by 8%, significantly enhancing user experience. Additionally, I optimized product discoverability by enhancing site search with Algolia.",
     dates: "2021-2024",
@@ -39,7 +39,7 @@ const jobs = ref([
   },
   {
     company: "SpareRoom",
-    position: "Back-end Software Developer",
+    position: "Software Developer",
     description:
       "As a developer on the backend team, I contributed to the platform by developing RESTful APIs in Perl for managing listings, user accounts, and rental transactions. My responsibilities also included participating in the integration of secure payment processing within the payment system using Node.js, including working with the Stripe API. Additionally, I leveraged my full-stack capabilities to support internal teams by building the frontend of an admin tool with jQuery for data access,   utilizing MySQL to query and analyze customer data, and generating custom reports for marketing mailshots. I also enhanced team efficiency by creating automation scripts in Go for repetitive development tasks, including determining daily stand-up participants based on availability.",
     dates: "2019-2020",

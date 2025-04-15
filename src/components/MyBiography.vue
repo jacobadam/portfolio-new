@@ -2,7 +2,7 @@
   <div class="biography">
     <h2>About Me</h2>
     <p class="intro">
-      I'm <b style="color: white">Jacob</b>, a creative coder & front-end
+      I'm <b class="biography-name">Jacob</b>, a creative coder & software
       developer.
     </p>
     <p class="work-history">
@@ -24,6 +24,15 @@
   padding: 30px 16px 16px 16px;
   margin-bottom: 16px;
   transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.biography-name {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.biography:hover .biography-name {
+  color: #f2734a;
 }
 
 p {

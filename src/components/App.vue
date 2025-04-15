@@ -185,9 +185,9 @@ const particlesOptions = {
 <style lang="scss" scoped>
 #tsparticles {
   z-index: -1;
-  @media (max-width: 1023px) {
-    display: none;
-  }
+  // @media (max-width: 1023px) {
+  //   display: none;
+  // }
 }
 
 .app {

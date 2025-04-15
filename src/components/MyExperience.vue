@@ -22,7 +22,7 @@ const jobs = ref([
     company: "Article",
     position: "Front-end Software Developer",
     description:
-      "I served as a front-end developer, actively participating in the maintenance and enhancement of a Vue powered eCommerce website. I specialized in integrating innovative technologies such as Apollo GraphQL for optimized data fetching, Algolia for seamless search functionality, and Contentful for effective content management.",
+      "Working as a developer on the Storefront team, I built and maintained features for the company’s e-commerce web application, which serves millions of monthly users, leveraging Vue.js, React, and Next.js. I drove a 12% increase in conversions via a product page redesign and implemented a cross-sell component that generated $30K in sales within its first month. I also spearheaded a performance optimization initiative that improved the Lighthouse score by 25% and reduced load times by 8%, significantly enhancing user experience. Additionally, I optimized product discoverability by enhancing site search with Algolia.",
     dates: "2021-2024",
     technologies: [
       "JavaScript",
@@ -41,7 +41,7 @@ const jobs = ref([
     company: "SpareRoom",
     position: "Back-end Software Developer",
     description:
-      "I actively contributed to the development of RESTful APIs using Perl, engaging in both front-end and back-end work for an in-house admin tool. With MySQL, I gathered data and created custom reports, showcasing my hands-on experience. I honed my skills with Git and Linux shell for version control, ensuring smooth collaboration. These experiences reflect my growth as a junior developer, demonstrating versatility and a practical understanding of key tools in software development.",
+      "As a developer on the backend team, I contributed to the platform by developing RESTful APIs in Perl for managing listings, user accounts, and rental transactions. My responsibilities also included participating in the integration of secure payment processing within the payment system using Node.js, including working with the Stripe API. Additionally, I leveraged my full-stack capabilities to support internal teams by building the frontend of an admin tool with jQuery for data access,   utilizing MySQL to query and analyze customer data, and generating custom reports for marketing mailshots. I also enhanced team efficiency by creating automation scripts in Go for repetitive development tasks, including determining daily stand-up participants based on availability.",
     dates: "2019-2020",
     technologies: ["Perl", "Node.js", "Go", "MySQL", "jQuery", "HTML", "CSS"],
   },
@@ -49,7 +49,7 @@ const jobs = ref([
     company: "Northcoders",
     position: "Graduate Software Developer",
     description:
-      "I completed a comprehensive full-stack coding course at an award-winning bootcamp in Manchester. Acquired practical skills through an industry-led curriculum covering TDD, paired programming, and object-oriented programming. Collaborated within a group of 5, successfully delivering an end-to-end application in an agile environment. Engaged in daily stand-ups, utilized a kanban board, and presented the final project, showcasing my proficiency and adaptability as a junior developer.",
+      "During this comprehensive full-stack coding course at an award-winning bootcamp, I acquired practical skills through an industry-led curriculum covering TDD, paired programming, and object-oriented programming. Collaborating with my teammates, we successfully delivering an end-to-end application in an agile environment. I also engaged in daily stand-ups, utilized a kanban board, and presented the final project.",
     dates: "2019",
     technologies: [
       "JavaScript",

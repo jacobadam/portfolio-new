@@ -37,10 +37,10 @@
 </template>
 
 <script setup>
-import nnWebsite from "@/assets/nn-website.webp";
+import nnWebsite from "@/assets/neilnevitt-homepage.webp";
 import spotifyStats from "@/assets/spotify-stats.webp";
 import tetris from "@/assets/tetris-site.webp";
-import ksPortfolio from "@/assets/ks-portfolio.webp";
+import ksPortfolio from "@/assets/katieshevlin-homepage.webp";
 import moodTrackerApp from "@/assets/mood-tracker-app.webp";
 import bechdelWallaceTest from "@/assets/bechdel-wallace-test.webp";
 

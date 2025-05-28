@@ -43,18 +43,11 @@ import tetris from "@/assets/tetris-site.webp";
 import ksPortfolio from "@/assets/katieshevlin-homepage.webp";
 import moodTrackerApp from "@/assets/mood-tracker-app.webp";
 import bechdelWallaceTest from "@/assets/bechdel-wallace-test.webp";
+import greenhouseWebdesigns from "@/assets/greenhouse-homepage.webp";
 
 import { ref } from "vue";
 
 const projects = ref([
-  {
-    name: "Bechdel-Wallace Test",
-    description:
-      "A Next.js app that evaluates movies against the Bechdel-Wallace Test, highlighting gender representation by checking if films meet key criteria for meaningful female presence and dialogue, all with a clean, user-friendly interface.",
-    image: bechdelWallaceTest,
-    link: "https://bechdeltest.vercel.app/",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-  },
   {
     name: "Mood Tracker App",
     description:
@@ -74,6 +67,29 @@ const projects = ref([
       "Netlify",
       "Heroku",
     ],
+  },
+  {
+    name: "Freelance Website",
+    description:
+      "A fast, responsive portfolio built with Next.js, Tailwind CSS, and Motion. Designed to showcase freelance services with smooth animations, modern UI, and optimized performance.",
+    image: greenhouseWebdesigns,
+    link: "https://www.greenhousewebdesigns.com/",
+    technologies: [
+      "Next.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "Motion",
+      "EmailJS",
+      "Vercel",
+    ],
+  },
+  {
+    name: "Bechdel-Wallace Test",
+    description:
+      "A Next.js app that evaluates movies against the Bechdel-Wallace Test, highlighting gender representation by checking if films meet key criteria for meaningful female presence and dialogue, all with a clean, user-friendly interface.",
+    image: bechdelWallaceTest,
+    link: "https://bechdeltest.vercel.app/",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
   },
   {
     name: "Content Services Portfolio",

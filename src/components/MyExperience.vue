@@ -19,6 +19,25 @@ import ExperienceComponent from "./ExperienceComponent.vue";
 
 const jobs = ref([
   {
+    company: "Greenhouse Web Designs",
+    position: "Founder",
+    description:
+      "As the founder of Greenhouse Web Designs, I’ve partnered with startups and small businesses to design and build high-performing, responsive websites  using various front-end technologies such as React, Next.js, and Tailwind CSS. My work includes developing custom components, integrating third-party APIs such as Google Maps, and optimizing SEO and accessibility to achieve top Lighthouse scores. I’ve also deployed front-end applications to platforms like Vercel and collaborated closely with clients to deliver tailored solutions under tight deadlines.",
+    dates: "2024-Present",
+    technologies: [
+      "JavaScript",
+      "TypeScript",
+      "Vue.js",
+      "Next.js",
+      "React",
+      "Motion",
+      "HTML",
+      "CSS",
+      "Vercel",
+      "Netlify",
+    ],
+  },
+  {
     company: "Article",
     position: "Software Developer",
     description:

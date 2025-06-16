@@ -74,14 +74,7 @@ const projects = ref([
       "A fast, responsive portfolio built with Next.js, Tailwind CSS, and Motion. Designed to showcase freelance services with smooth animations, modern UI, and optimized performance.",
     image: greenhouseWebdesigns,
     link: "https://www.greenhousewebdesigns.com/",
-    technologies: [
-      "Next.js",
-      "JavaScript",
-      "Tailwind CSS",
-      "Motion",
-      "EmailJS",
-      "Vercel",
-    ],
+    technologies: ["Next.js", "JavaScript", "Tailwind CSS", "Motion", "Vercel"],
   },
   {
     name: "Bechdel-Wallace Test",
@@ -108,7 +101,7 @@ const projects = ref([
   {
     name: "Healthcare Website",
     description:
-      "A React app that integrates the Google Maps API and utilizes EmailJS for the contact form, with styling implemented using Tailwind CSS.",
+      "A React app that integrates the Google Maps API and utilizes Web3Forms for the contact form, with styling implemented using Tailwind CSS.",
     image: nnWebsite,
     link: "https://www.neilnevitt.com/",
     technologies: [
@@ -116,7 +109,6 @@ const projects = ref([
       "JavaScript",
       "Tailwind CSS",
       "GoogleMaps API",
-      "EmailJS",
       "Netlify",
     ],
   },

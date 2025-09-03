@@ -30,6 +30,7 @@ const jobs = ref([
       "Vue.js",
       "Next.js",
       "React",
+      "Angualar",
       "Motion",
       "HTML",
       "CSS",
@@ -60,9 +61,9 @@ const jobs = ref([
     company: "SpareRoom",
     position: "Software Developer",
     description:
-      "As a developer on the backend team, I contributed to the platform by developing RESTful APIs in Perl for managing listings, user accounts, and rental transactions. My responsibilities also included participating in the integration of secure payment processing within the payment system using Node.js, including working with the Stripe API. Additionally, I leveraged my full-stack capabilities to support internal teams by building the frontend of an admin tool with jQuery for data access,   utilizing MySQL to query and analyze customer data, and generating custom reports for marketing mailshots. I also enhanced team efficiency by creating automation scripts in Go for repetitive development tasks, including determining daily stand-up participants based on availability.",
+      "As a developer on the backend team, I contributed to the platform by developing RESTful APIs in Perl for managing listings, user accounts, and rental transactions. My responsibilities also included participating in the integration of secure payment processing within the payment system using Node.js, including working with the Stripe API. Additionally, I leveraged my full-stack capabilities to support internal teams by building the frontend of an admin tool with Angular for data access,   utilizing MySQL to query and analyze customer data, and generating custom reports for marketing mailshots. I also enhanced team efficiency by creating automation scripts in Go for repetitive development tasks, including determining daily stand-up participants based on availability.",
     dates: "2019-2020",
-    technologies: ["Perl", "Node.js", "Go", "MySQL", "jQuery", "HTML", "CSS"],
+    technologies: ["Perl", "Node.js", "Go", "MySQL", "Angular", "HTML", "CSS"],
   },
   {
     company: "Northcoders",

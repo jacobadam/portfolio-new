@@ -30,7 +30,7 @@ const jobs = ref([
       "Vue.js",
       "Next.js",
       "React",
-      "Angualar",
+      "Angular",
       "Motion",
       "HTML",
       "CSS",
